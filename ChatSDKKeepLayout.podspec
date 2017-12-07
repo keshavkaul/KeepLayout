@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name         = "ChatSDKKeepLayout"
-  s.version      = "1.7.2"
+  s.version      = "1.7.4"
   s.summary      = "Making Auto Layout easier to code."
-  s.homepage     = "https://github.com/Tricertops/KeepLayout"
+  s.homepage     = "https://github.com/chat-sdk/KeepLayout"
 
   s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author       = 'Tricertops'
 
-  s.source       = { :git => "https://github.com/Tricertops/KeepLayout.git", :tag => "v1.7.1" }
+  s.source       = { :git => "https://github.com/chat-sdk/KeepLayout.git", :tag => "1.7.4" }
 
   s.requires_arc = true
 
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
     op.osx.exclude_files = 'Sources/UIViewController+KeepLayout.{h,m}', 'Sources/UIScrollView+KeepLayout.{h,m}'
   end
   s.subspec 'Swift' do |sp|
-    sp.dependency 'KeepLayout/ObjC'
+    sp.dependency 'ChatSDKKeepLayout/ObjC'
     sp.source_files = 'Sources/*.{swift}'
     sp.ios.deployment_target = '8.0'
     sp.osx.deployment_target = '10.9'
