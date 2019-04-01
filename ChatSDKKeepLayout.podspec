@@ -12,8 +12,11 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.module_name = "KeepLayout"
+  s.header_dir = "KeepLayout"
   s.default_subspec = 'Swift'
   
+  s.swift_version = '4.0'
+
   s.platform = :ios, '8.0'
 
   s.subspec 'ObjC' do |op|
